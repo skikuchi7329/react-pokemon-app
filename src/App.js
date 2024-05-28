@@ -48,10 +48,7 @@ function App() {
 
     setLoading(true);
     let data = await getAllPokemon(prevURL);
-
-    console.log(data);
     await loadPokemon(data.results);
-
     setNextURL(data.next);
     setPrevURL(data.previous);
     setLoading(false);
