@@ -34,21 +34,21 @@ function App() {
 
   return (
     <>
-    <Navbar />
-    <div className="App">
-      {loading ? (
-        <h1>ロード中・・・</h1>
-      ) : (
-        <>
-          <div className="pokemonCardContainer">
-            {pokemonData.map((pokemon, i) => {
-              return <Card key={i} pokemon={pokemon}></Card>;
-            })}
-          </div>
-        </>
-      )}
-    </div>
-      </>
+      <Navbar />
+      <div className="App">
+        {loading ? (
+          <h1>ロード中・・・</h1>
+        ) : (
+          <>
+            <div className="pokemonCardContainer">
+              {pokemonData.map((pokemon, i) => {
+                return <Card key={i} pokemon={pokemon}></Card>;
+              })}
+            </div>
+          </>
+        )}
+      </div>
+    </>
   );
 }
 
